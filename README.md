@@ -13,7 +13,7 @@ This optional Cordis client plugin adds DeepSeek Chat to AryaAI Desktop's left n
 
 ## Use this package
 
-Mount `@deepseek-ai/dsh-client-ui-deepseek-chat` after `@deepseek-ai/dsh-client-ui-sidebar-browser` in the Web application bundle. Removing or disabling this Cordis row removes the navigation entry and webview. The package is private pending a distribution decision for DeepSeek's website and branding.
+Install `@deepseek-ai/dsh-client-ui-deepseek-chat` as a profile dependency and add it to that profile's `dsh.profile.bundles` list after the Web application bundle. Its `dsh.bundle` patch installs the Cordis row. The Web bundle supplies `@deepseek-ai/dsh-client-ui-sidebar-browser`. Removing the bundle selection removes the navigation entry and webview. The package is private pending a distribution decision for DeepSeek's website and branding.
 
 ## Understand the implementation
 

@@ -13,7 +13,7 @@ kind: "package-reference"
 
 ## 使用本包
 
-在 Web 应用 bundle 中将 `@deepseek-ai/dsh-client-ui-deepseek-chat` 挂载于 `@deepseek-ai/dsh-client-ui-sidebar-browser` 之后。移除或禁用这一 Cordis 配置项即可移除导航条目和 webview。在确定 DeepSeek 网站和品牌的分发方式前，本包保持私有。
+将 `@deepseek-ai/dsh-client-ui-deepseek-chat` 安装为 profile 依赖，并在 Web 应用 bundle 之后把它加入该 profile 的 `dsh.profile.bundles` 列表。它的 `dsh.bundle` patch 会安装 Cordis 配置项。Web 应用 bundle 提供 `@deepseek-ai/dsh-client-ui-sidebar-browser`。取消选用此 bundle 即可移除导航条目和 webview。在确定 DeepSeek 网站和品牌的分发方式前，本包保持私有。
 
 ## 理解实现
 

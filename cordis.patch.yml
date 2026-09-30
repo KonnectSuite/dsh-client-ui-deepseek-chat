@@ -1,0 +1,4 @@
+- insert:
+    - id: ui-deepseek-chat
+      name: '@deepseek-ai/dsh-client-ui-deepseek-chat'
+      config: {}
