@@ -3,26 +3,35 @@
 # After editing either side, bring the other along and re-record with:
 #   pnpm run verify-translation-pairing --write packages/client/ui-deepseek-chat/README.md
 /:
-  en: 3610b34c90a8d230
-  zh: 45709b7b57804fcf
+  en: 86f9cb10fcb968ab
+  zh: b818d1bc524dedd2
 /deepseek-ai-dsh-client-ui-deepseek-chat:
   en: 96bcd7c5c06e2d42
   zh: cecec2f1619841ff
 /deepseek-ai-dsh-client-ui-deepseek-chat/summary:
-  en: 6ba48a065b8fd952
-  zh: 3e8052715c82ec77
+  en: dc640cf4ab38c953
+  zh: d8f41bdd5ae2fbdd
+/deepseek-ai-dsh-client-ui-deepseek-chat/table-of-contents:
+  en: 638dd73bc5b9dc7a
+  zh: dafa043aa986e0c0
 /deepseek-ai-dsh-client-ui-deepseek-chat/use-this-package:
-  en: 5189b7014eefde14
-  zh: 430badc0afa6fe13
+  en: 4718ce754a058676
+  zh: 13d3d92ec2b62692
 /deepseek-ai-dsh-client-ui-deepseek-chat/understand-the-implementation:
-  en: 268ca6a87392124a
-  zh: b96903d62da35452
+  en: d9ca927876024c64
+  zh: 18612fd3989fb608
+/deepseek-ai-dsh-client-ui-deepseek-chat/rockwell-resources:
+  en: 42857a8379728e3e
+  zh: fbab821b3235857a
 /deepseek-ai-dsh-client-ui-deepseek-chat/model-experience:
   en: 28692ff948e35e73
   zh: f3188835f67fde18
 /deepseek-ai-dsh-client-ui-deepseek-chat/model-experience/kv-cache-effect:
-  en: 2c0640f2d4a8f967
-  zh: f7228f32886a458c
+  en: 4545544f1c231bbd
+  zh: 74e510c7caac98a3
 /deepseek-ai-dsh-client-ui-deepseek-chat/known-limitations-and-deferred-work:
-  en: 328acde5734786cd
-  zh: d273953ef2757617
+  en: a2c50f035a009e00
+  zh: 944ce6e16e64dca4
+/deepseek-ai-dsh-client-ui-deepseek-chat/known-limitations-and-deferred-work/dev-note:
+  en: b7fbf1f393752f9b
+  zh: 967257a948997873

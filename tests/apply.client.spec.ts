@@ -6,6 +6,7 @@ import { createSnapshotStore } from '@deepseek-ai/dsh-client-store'
 import type { TabId } from '@deepseek-ai/dsh-client-ui-dockkit'
 import { apply, inject } from '../src/client/index.ts'
 import { CHAT_PANEL_ID, DeepSeekChatIcon, DeepSeekChatOverlay, DeepSeekChatPanel } from '../src/client/DeepSeekChat.tsx'
+import { ROCKWELL_PANEL_ID, RockwellIcon, RockwellPanel, RockwellOverlay } from '../src/client/RockwellResources.tsx'
 
 const contexts: Context[] = []
 afterEach(async () => {
@@ -39,13 +40,17 @@ it('registers and removes the Desktop page independently of the Browser plugin',
   } as never)
   ctx.provide('sidebarRight', sidebarRight as never)
   ctx.provide('layout', {} as never)
-  ctx.provide('browserPages', {} as never)
+  ctx.provide('browserPages', { emptyFrame: () => ({}) } as never)
+  ctx.provide('configForms', { get: () => ({}) } as never)
   const fiber = ctx.plugin({ inject: [...inject], apply })
   await fiber.await()
   expect(registered.map(entry => [entry.name, entry.key, entry.component])).toEqual([
+    ['main', ROCKWELL_PANEL_ID, RockwellPanel],
+    ['sidebar.panellist', undefined, RockwellIcon],
     ['main', CHAT_PANEL_ID, DeepSeekChatPanel],
     ['sidebar.panellist', undefined, DeepSeekChatIcon],
     ['shell.overlay', undefined, DeepSeekChatOverlay],
+    ['shell.overlay', undefined, RockwellOverlay],
   ])
   expect(dictionaries.has('deepseekChat')).toBe(true)
   openTabs.set([{ sessionId: 'session', tabId: 'old-chat' as TabId, kind: 'deepseek-chat' }])

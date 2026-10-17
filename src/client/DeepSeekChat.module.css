@@ -28,6 +28,18 @@
   pointer-events: none;
 }
 
+/* The overlay layer spans the whole frame, which on Windows includes the
+   Electron caption strip above every panel (AppFrame pads the frame by it, so
+   the centre column starts below). Starting the overlay at the frame's top
+   therefore paints this page over the window's caption row and replaces the
+   shell's header with this page's toolbar. Offset by the same strip the centre
+   column is offset by, so the toolbar lands exactly on the row the panel owns —
+   the platform figure is declared only under this attribute, so the base rule
+   above stays the whole story everywhere else. */
+:global([data-windows-titlebar]) .overlay {
+  top: var(--dsh-windows-titlebar-height);
+}
+
 .overlay[data-active] {
   visibility: visible;
   pointer-events: auto;
@@ -61,8 +73,25 @@
 .title {
   margin-left: 8px;
   color: var(--dsw-alias-label-primary);
-  font-weight: 600;
+  font-weight: 500;
+}
+
+.status {
+  color: var(--dsw-alias-label-secondary);
+  font-size: 12px;
 }
 
 .viewport { flex: 1; min-height: 0; }
 .error { margin: 0; padding: 8px 12px; color: var(--dsw-alias-state-error-primary); }
+
+.resourceToolbar {
+  display: flex;
+  flex: none;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--dsw-alias-border-l3);
+}
+
+.resourceHint { margin: 0; padding: 6px 12px; font-size: 13px; color: var(--dsw-alias-label-secondary); }
