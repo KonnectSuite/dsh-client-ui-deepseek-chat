@@ -5,7 +5,7 @@ import { setRememberedPlaywright, type PlaywrightPreference } from '../src/clien
 
 function fixture(value: PlaywrightPreference, writable = true) {
   const snapshot: ConfigFormSnapshot<PlaywrightPreference> = {
-    status: 'ready', value, writable, revision: 7, mode: 'host', base: {}, user: {},
+    status: 'ready', value, writable, revision: 7, base: {}, user: {},
   }
   const mutate = vi.fn<ConfigForm<PlaywrightPreference>['mutate']>().mockResolvedValue(true)
   const form: ConfigForm<PlaywrightPreference> = {

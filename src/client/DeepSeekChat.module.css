@@ -52,7 +52,7 @@
   align-items: center;
   gap: 6px;
   padding: 0 12px;
-  border-bottom: 1px solid var(--dsw-alias-border-l3);
+  border-bottom: 0.5px solid var(--dsw-alias-border-l3);
 }
 
 .toolbar button {
@@ -61,7 +61,7 @@
   width: 28px;
   height: 28px;
   border: 0;
-  border-radius: 6px;
+  border-radius: var(--dsw-radius-sm);
   background: transparent;
   color: var(--dsw-alias-label-primary);
   cursor: pointer;
@@ -91,7 +91,7 @@
   align-items: center;
   gap: 6px;
   padding: 8px 12px;
-  border-bottom: 1px solid var(--dsw-alias-border-l3);
+  border-bottom: 0.5px solid var(--dsw-alias-border-l3);
 }
 
 .resourceHint { margin: 0; padding: 6px 12px; font-size: 13px; color: var(--dsw-alias-label-secondary); }
