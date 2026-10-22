@@ -15,7 +15,6 @@
     { "path": "../ui-sidebar" },
     { "path": "../ui-sidebar-browser/tsconfig.client.json" },
     { "path": "../ui-sidebar-right" },
-    { "path": "../ui-slots" },
-    { "path": "../ui-settings/tsconfig.client.json" }
+    { "path": "../ui-slots" }
   ]
 }

@@ -83,15 +83,3 @@
 
 .viewport { flex: 1; min-height: 0; }
 .error { margin: 0; padding: 8px 12px; color: var(--dsw-alias-state-error-primary); }
-
-.resourceToolbar {
-  display: flex;
-  flex: none;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 12px;
-  border-bottom: 0.5px solid var(--dsw-alias-border-l3);
-}
-
-.resourceHint { margin: 0; padding: 6px 12px; font-size: 13px; color: var(--dsw-alias-label-secondary); }
