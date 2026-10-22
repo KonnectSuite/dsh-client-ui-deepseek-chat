@@ -1,6 +1,6 @@
 {
   "repository": "KonnectSuite/AryaAI",
-  "commit": "374ec9227b48166910295c34d3b9a2401160ffc5",
+  "commit": "7d365b1faca5d6f76b868f7fb6886471198625a9",
   "path": "packages/client/ui-deepseek-chat",
   "build": "Build and test in the AryaAI workspace; lib files and resolved package metadata are copied from its packed artifact."
 }
